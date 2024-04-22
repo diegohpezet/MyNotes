@@ -20,7 +20,7 @@ const Navbar: React.FC<NavbarProps> = ({ onSearch }) => {
   return (
     <div className="flex p-3 bg-white border rounded-md shadow-sm">
       <div className="flex flex-1 container">
-        <Input className="bg-gray-100 p-2 mr-5 rounded-lg" placeholder="Search" onChange={handleNoteSearch} />
+        <Input name="search" className="bg-gray-100 p-2 mr-5 rounded-lg" placeholder="Search" onChange={handleNoteSearch} />
         <Link href="?add=true">
           <Button className="bg-blue-500 text-white rounded-xl">+ Add</Button>
         </Link>
